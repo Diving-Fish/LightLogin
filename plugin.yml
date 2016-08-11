@@ -1,0 +1,38 @@
+name: LightLogin
+main: com.divingfish.LightLogin
+author: Diving_Fish
+version: 0.1.0
+commands:
+ llhelp:
+  description: help
+  usage: /llhelp
+  permission: ll.help
+ login:
+  aliases: [login, l]
+  description: login
+  usage: /login <password>
+  permission: ll.login
+ register:
+  aliases: [register, reg]
+  description: register
+  usage: /register <password> <password>
+  permission: ll.reg
+ pwc:
+  description: change your password
+  usage: /pwc <password> <newpassword> <newpassword>
+  permission: ll.pwc
+ fpwc:
+  description: force to change one's password
+  usage: /fpwc <name> <newpassword> <newpassword>
+  permission: ll.fpwc
+permissions:
+ ll.help:
+  default: true
+ ll.login:
+  default: true
+ ll.reg:
+  default: true
+ ll.pwc:
+  default: true
+ ll.fpwc:
+  default: op
